@@ -40,12 +40,8 @@ vim.diagnostic.config({
 opt.list = true
 opt.listchars = "eol:↵,nbsp:+,tab:→ ,trail:-"
 
--- Fold settings (disable auto-folding)
-opt.foldmethod = "expr"
-opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-opt.foldcolumn = "0"
-opt.foldtext = ""
+-- Fold settings for UFO
+opt.foldcolumn = "1"
 opt.foldlevel = 99
-opt.foldlevelstart = 99  -- Start with all folds open
-opt.foldnestmax = 4
-opt.foldenable = false   -- Disable folding by default
+opt.foldlevelstart = 99
+opt.foldenable = true
