@@ -1,4 +1,36 @@
 return {
+    -- Indent blankline
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {
+      indent = { 
+        char = "│",
+        tab_char = "│",
+      },
+      scope = { 
+        enabled = true,
+        char = "│",
+        show_start = true,
+        show_end = true,
+      },
+      exclude = {
+        buftypes = { "nofile", "terminal", "neorg" },
+        filetypes = {
+          "norg",
+          "NvimTree",
+          "sagaoutline", 
+          "help",
+          "terminal",
+          "dashboard",
+          "lspinfo",
+          "TelescopePrompt",
+          "TelescopeResults",
+        },
+      },
+    },
+  },
+  
   -- Colorizer
   {
     "norcalli/nvim-colorizer.lua",
