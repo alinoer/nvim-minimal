@@ -12,6 +12,18 @@ keymap.set("n", "<C-j>", "<C-w>j")
 keymap.set("n", "<C-k>", "<C-w>k")
 keymap.set("n", "<C-l>", "<C-w>l")
 
+-- Window splitting
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split vertically" })
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split horizontally" })
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
+keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+
+-- Window resizing
+keymap.set("n", "<C-Up>", "<cmd>resize +2<CR>", { desc = "Increase window height" })
+keymap.set("n", "<C-Down>", "<cmd>resize -2<CR>", { desc = "Decrease window height" })
+keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<CR>", { desc = "Decrease window width" })
+keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Increase window width" })
+
 -- Save & quit
 keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
@@ -32,3 +44,6 @@ keymap.set("n", "K", function()
     vim.lsp.buf.hover()
   end
 end, { desc = "Peek fold or LSP hover" })
+
+-- Dashboard keymap
+keymap.set("n", "<leader>d", "<cmd>Dashboard<cr>", { desc = "Dashboard" })
