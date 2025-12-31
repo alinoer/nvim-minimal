@@ -9,6 +9,7 @@ return {
           "",
           "",
           "NVIM v" .. vim.version().major .. "." .. vim.version().minor .. "." .. vim.version().patch,
+          "It's a terminal, but cooler — yes, I type everything.",
           "",
           "Works on my machine",
           "Yesterday Ali was smart. Today Ali uses Neovim.",
@@ -17,6 +18,8 @@ return {
           "",
         },
         shortcut = {},
+        project = { enable = false },
+        mru = { enable = false },
         footer = {
           "",
           "🚀 Time to write some spaghetti code!",
