@@ -13,7 +13,7 @@ return {
           "",
           "Works on my machine",
           "Yesterday Ali was smart. Today Ali uses Neovim.",
-          "Git add . && git commit -m 'fix'",
+          "git add . && git commit -m 'fix'",
           "I use Neovim btw.",
           "",
         },
